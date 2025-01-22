@@ -1,0 +1,30 @@
+:root{
+    --md-sys-color-primary: #1D5902;
+    --md-sys-color-secondary: #590255;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+    font-size: 2rem;
+
+    color: #1D5902;
+}
+  
+.material-symbols-outlined.secondary{
+    color: #590255;
+}
+
+@media (min-width: 720px) {
+    /* Styles for screens 768px wide or larger */
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 40;
+    }
+}

@@ -1,0 +1,8 @@
+@media (min-width: 720px) {
+    /* Styles for screens 768px wide*/
+  
+    main{
+      margin: 0 16vw;
+    }
+    
+}

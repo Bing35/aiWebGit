@@ -1,0 +1,49 @@
+body{
+  --color-primary: #1D5902;
+  --color-secondary: #590255;
+}
+
+
+body{
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 1.2rem;
+}
+
+#nav{
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+}
+#nav #menu{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#nav #toggle-nav{
+  position: relative;
+  bottom: 2em;
+}
+#nav #nav-desktop{
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: row;
+}
+#nav #nav-desktop>ul{
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+@media (min-width: 720px) {
+  /* Styles for screens 768px wide or narrower */
+
+  #nav{
+      all: initial;
+  }
+
+  #nav li{
+    margin-right: 1em;
+  }
+  
+}

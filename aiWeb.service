@@ -1,0 +1,11 @@
+[Unit]
+Description=ai web
+After=network.target 
+
+[Service]
+ExecStart=node-20 --env-file='/abcde/.env' '/abcde/app.mjs'
+Restart=always
+RestartSec=2  
+
+[Install]
+WantedBy=multi-user.target

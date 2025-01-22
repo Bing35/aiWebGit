@@ -1,0 +1,26 @@
+h1,h2,h3{
+    color: orange;
+}
+
+div.box{
+    display: flex;
+    flex-direction: row;
+}
+
+div.box>div{
+    width: 20em;
+    height: 20em;
+}
+
+div.pink1{
+    background-color: lch(80 150 50);
+}
+
+div.pink2{
+    background-color: lch(80 200 50);
+}
+
+textarea{
+    width: 95vw;
+    height: 80vh;
+}
