@@ -13,7 +13,7 @@ function Nav(props) {
                     </md-fab>
                     <div id="toggle-nav">
                     <span id='logo'>
-                        <a class="navbar-brand" href="/">MHWG</a></span>
+                        <a class="navbar-brand" href="/">AIC</a></span>
                         <ul>
                             <li><a href="/narrative">narrative</a></li>
                             <li>hi2</li>
@@ -26,7 +26,7 @@ d                       </ul>
         else {
             return (
                 <div id="nav-desktop">
-                    <span id='logo'><a class="navbar-brand" href="/">MHWG</a></span>
+                    <span id='logo'><a class="navbar-brand" href="/">AIC</a></span>
                     <ul>
                         <li class="nav-item"><a href="/narrative">narrative</a></li>
                         <li class="nav-item">Hi2</li>

@@ -22,7 +22,7 @@ function Nav(props) {
       }, /*#__PURE__*/React.createElement("a", {
         class: "navbar-brand",
         href: "/"
-      }, "MHWG")), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
+      }, "AIC")), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", null, /*#__PURE__*/React.createElement("a", {
         href: "/narrative"
       }, "narrative")), /*#__PURE__*/React.createElement("li", null, "hi2"), /*#__PURE__*/React.createElement("li", null, "hi3"), "d                       ")));
     } else {
@@ -33,7 +33,7 @@ function Nav(props) {
       }, /*#__PURE__*/React.createElement("a", {
         class: "navbar-brand",
         href: "/"
-      }, "MHWG")), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", {
+      }, "AIC")), /*#__PURE__*/React.createElement("ul", null, /*#__PURE__*/React.createElement("li", {
         class: "nav-item"
       }, /*#__PURE__*/React.createElement("a", {
         href: "/narrative"

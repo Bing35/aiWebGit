@@ -32,11 +32,11 @@ app.use(await koaPath('/', async function(cont){
             max_tokens: 4096,
             temperature: 0,
             messages: [{role:'user', content: claudeContent}],
-            model: 'claude-3-5-sonnet-latest',
+            model: 'claude-haiku-4-5',
         })
             .catch(function(error){
                 console.error(error)
-                message.reply(error)
+                // message.reply(error)
                 return undefined
             });
         
