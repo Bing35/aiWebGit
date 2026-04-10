@@ -19,12 +19,21 @@ app.use(serveStaticFiles)
 app.use(await koaPath('/', async function(cont){
     if (cont.method == 'GET'){
         cont.body = await renderTemplate('index.html', {
-            message: 'hello world'
+            message: 'hello world',
+            mode: '',
+            placeholder: 'Ask anything...'
         })    
     }
     if (cont.method == 'POST'){
+        const mode = cont.request.body.mode
+        let systemPrompt
+        if (mode === 'narrative') {
+            systemPrompt = 'Write a nice narrative about '
+        } else {
+            systemPrompt = ''
+        }
         const claudeContent = [
-            {type: 'text', text: cont.request.body.prompt}
+            {type: 'text', text: systemPrompt + cont.request.body.prompt}
         ]
         log('claude content', claudeContent)
 
@@ -55,7 +64,8 @@ app.use(await koaPath('/narrative', async function(cont){
     if (cont.method == 'GET'){
         cont.body = await renderTemplate('index.html', {
             message: 'hello world',
-            prompt: 'Write a nice narrative about '
+            mode: 'narrative',
+            placeholder: 'Enter a subject for the narrative...'
         })
     }
 }))
